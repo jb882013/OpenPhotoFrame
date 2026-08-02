@@ -406,9 +406,9 @@ class _SettingsScreenState extends State<SettingsScreen> with WidgetsBindingObse
             icon: Icons.timer,
             title: AppLocalizations.of(context)!.slideDuration,
             value: _slideDurationMinutes.toDouble(),
-            min: 1,
-            max: 15,
-            divisions: 14,
+            min: 0.25,
+            max: 1,
+            divisions: 3,
             unit: AppLocalizations.of(context)!.unitMinutes,
             onChanged: (value) {
               setState(() => _slideDurationMinutes = value.round());
